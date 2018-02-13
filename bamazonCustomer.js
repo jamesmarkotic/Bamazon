@@ -55,7 +55,7 @@ function buyAuction() {
         var newStock = chosenItem.stock_quantity - answer.buy;
 
         // determine if buy was high enough
-        if (chosenItem.stock_quantity > parseInt(answer.buy)) {
+        if (chosenItem.stock_quantity >= parseInt(answer.buy)) {
           // buy was high enough, so update db, let the user know, and start over
           connection.query(
             "UPDATE products SET ? WHERE ?",
