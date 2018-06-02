@@ -2,6 +2,9 @@
 
 This is an app that tracks products in stock and allows you to buy them depending on their availability.
 
+To run, simply type 'node bamazonCustomer.js'
+Nodemon is not compatible
+
 ## Steps to use app
 ![1.](./images/1.png)
 
